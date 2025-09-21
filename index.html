@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card - HNG Stage 1</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <article class="profile-card" data-testid="test-profile-card">
+    <figure class="profile-avatar">
+      <img 
+        src="images/pic.jpeg" 
+        alt="Akinyemi Samuel Temidayo" 
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <section class="profile-info">
+      <header>
+        <h2 data-testid="test-user-name">Akinyemi Samuel Temidayo</h2>
+      </header>
+      
+      <p data-testid="test-user-bio">
+        A passionate frontend developer who loves turning creative ideas into smooth, responsive user interfaces. 
+        Always learning and exploring new web technologies while striving to make every design clean, simple, and engaging.
+      </p>
+
+      <p class="profile-time">
+        Current Time (ms): <span data-testid="test-user-time" id="time"></span>
+      </p>
+
+      <nav class="profile-socials" aria-label="Social links">
+        <ul data-testid="test-user-social-links">
+          <li><a href="https://x.com/TemidayoSa8790?s=09" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+          <li><a href="https://github.com/temidayoakinyemi" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/akinyemi-samuel-065776310/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <section class="profile-list" aria-label="Hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Playing and watching football</li>
+          <li>Listening to music</li>
+          <li>Learning new tech skills</li>
+        </ul>
+      </section>
+
+      <section class="profile-list" aria-label="Dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Messy code</li>
+          <li>Slow websites</li>
+          <li>Unclear documentation</li>
+        </ul>
+      </section>
+    </section>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>

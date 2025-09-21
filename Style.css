@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #10141e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.main-header {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  background: #161b28;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #7b61ff;
+}
+
+/* PROFILE CARD (HOME PAGE) */
+.profile-card {
+  background: #161b28;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.02);
+}
+
+.profile-avatar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7b61ff;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 230px;
+}
+
+.profile-info h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 10px;
+}
+
+.profile-time {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.profile-socials ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.profile-socials a {
+  text-decoration: none;
+  color: #7b61ff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.profile-socials a:hover {
+  color: #a78bfa;
+}
+
+.profile-list h3 {
+  font-size: 1rem;
+  color: #7b61ff;
+  margin-bottom: 8px;
+}
+
+.profile-list ul {
+  list-style: disc inside;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 15px;
+}
+
+/* ABOUT PAGE */
+.about-page {
+  max-width: 700px;
+  background: #161b28;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-page section {
+  margin-bottom: 25px;
+}
+
+.about-page h2 {
+  color: #7b61ff;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.about-page p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+  max-width: 600px;
+  background: #161b28;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-page h2 {
+  color: #7b61ff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background: #1d2333;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #7b61ff;
+  background: #1b2030;
+}
+
+button {
+  background: #7b61ff;
+  border: none;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #6b4fff;
+}
+
+/* Error and Success States */
+.error {
+  color: #ff6961;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.success {
+  color: #4caf50;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .profile-socials ul {
+    justify-content: center;
+  }
+
+  .about-page,
+  .contact-page {
+    padding: 20px;
+  }
+}
