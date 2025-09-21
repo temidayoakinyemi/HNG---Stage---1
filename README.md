@@ -21,6 +21,24 @@ Client-side form validation (name, email, subject, and message)
 
 Smooth and consistent styling using CSS
 
+Live Demo
+
+View Live Project Here - hng-stage-1-fj6u.vercel.app
+
+Repository: https://github.com/temidayoakinyemi/HNG---Stage---1
+
+This repository contains all files for the project:
+
+index.html
+
+about.html
+
+contact.html
+
+style.css
+
+script.js
+
 Author
 
 Akinyemi Samuel Temidayo
